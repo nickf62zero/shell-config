@@ -2,10 +2,10 @@
 # Author: Nick Fabrizio
 # Date: 2021-09-14
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/robanks/.oh-my-zsh"
+
 
 # Shell variables
+   export ZSH="/home/robanks/.oh-my-zsh"       # Path to your oh-my-zsh installation.
    export EDITOR=vim                           # Set default text editor
    export WORDCHARS=''                         # This is the oh-my-zsh default, I think I'd like it to be a bit different 
    export PAGER=less                           # Set default pager
@@ -28,7 +28,7 @@ export ZSH="/home/robanks/.oh-my-zsh"
    unsetopt FLOW_CONTROL                       # Ctrl+S and Ctrl+Q usually disable/enable tty input. This disables those inputs
    setopt LONG_LIST_JOBS                       # List jobs in the long format by default. (I don't know what this does but it sounds good)
    setopt vi                                   # Make the shell act like vi if i hit escape
-   source $ZSH/oh-my-zsh.sh
+   source $ZSH/oh-my-zsh.sh                    # Source oh-my-zsh
 
 # ZSH History 
    alias history='fc -fl 1'
